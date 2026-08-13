@@ -219,15 +219,26 @@ Models are compared using important regression metrics.
 
 # 📈 Performance Comparison
 
+# 📊 Performance Comparison
+
 <div align="center">
 
-<img src="images/model-comparison.gif" width="850" alt="Model Comparison">
+### 🤖 Comparing All Machine Learning Models
+
+<img src="./images/model_comparison.png"
+     width="850"
+     alt="Model Performance Comparison">
 
 <br><br>
 
-<img src="images/r2-comparison.png" width="850" alt="R2 Score Comparison">
+### 📈 R² Score Comparison
+
+<img src="./images/r2-comparison.png"
+     width="850"
+     alt="R2 Score Comparison">
 
 </div>
+
 
 ---
 
