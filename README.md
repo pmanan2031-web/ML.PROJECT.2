@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjA2ZmZjMjE1MjQ1MTI2OTVmMjY5ZjY2ZGVmODQzYzQ4NTI5YmVmZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l0MYt5jPR6QX5pnqM/giphy.gif" width="180"/>
-
 # 🏠 HOUSE PRICE PREDICTION
 
 ### ✨ Machine Learning Regression Project ✨
