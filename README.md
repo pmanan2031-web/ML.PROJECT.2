@@ -1,22 +1,14 @@
-# 🏠 House Price Prediction & Regression Model Comparison
+# 🏠 House Price Prediction Using Machine Learning
 
 <div align="center">
 
-# 📊 Machine Learning Regression Project
-
-### Predicting House Prices using Multiple Machine Learning Models
-
-<br>
-
-<img src="assets/house.gif" alt="House Price Prediction GIF" width="500">
-
-<br><br>
-
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge\&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-purple?style=for-the-badge)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-blue?style=for-the-badge)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge\&logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?style=for-the-badge\&logo=numpy)
+![Scikit--Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge\&logo=scikitlearn)
 ![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+
+### 🚀 A Machine Learning Project for Predicting House Prices and Comparing Multiple Regression Models
 
 </div>
 
@@ -24,129 +16,70 @@
 
 ## 📌 Project Overview
 
-This project focuses on **predicting house prices using Machine Learning Regression techniques**.
+This project focuses on **House Price Prediction using Machine Learning**.
 
-Different regression models are trained and evaluated to understand which model performs best on the house price dataset.
+The main objective is to build, train, evaluate, and compare multiple regression models to predict the **`houseprice`** of a property based on available features.
 
-The project includes:
+The project covers the complete machine learning workflow:
 
-* 📂 Data Loading
-* 🧹 Data Preparation
-* 🎯 Feature and Target Selection
-* ✂️ Train-Test Split
-* ⚖️ Feature Scaling
-* 📈 Ridge Regression
-* 📉 Lasso Regression
-* 🔄 Cross Validation
-* 🌳 Decision Tree Regression
-* 🌲 Random Forest Regression
-* 📊 Support Vector Regression
-* 🧮 Model Performance Evaluation
-* 🏆 Best Model Selection
-* 🔍 Regularization Analysis
+> 📂 Data Loading → 🧹 Data Preparation → ✂️ Train-Test Split → ⚙️ Feature Scaling → 🤖 Model Training → 🔄 Cross Validation → 🎯 Hyperparameter Tuning → 📊 Model Comparison → 🏆 Best Model Selection
 
 ---
 
-# 🎬 Project Workflow
+# 🎬 Project Preview
 
 <div align="center">
 
-<img src="assets/ml-workflow.gif" alt="Machine Learning Workflow" width="700">
+<!-- Add your project GIF here -->
+
+<img src="images/project_demo.gif" width="800" alt="Project Demo">
+
+<br>
+
+### 📊 Machine Learning Model Workflow
+
+<img src="images/model_workflow.gif" width="800" alt="ML Workflow">
 
 </div>
 
-```text
-                HOUSE PRICE DATASET
-                         │
-                         ▼
-                  DATA LOADING
-                         │
-                         ▼
-              DATA PREPROCESSING
-                         │
-                         ▼
-           FEATURE / TARGET SELECTION
-                         │
-                         ▼
-               TRAIN - TEST SPLIT
-                         │
-                         ▼
-                FEATURE SCALING
-                         │
-                         ▼
-      ┌──────────────────┼──────────────────┐
-      ▼                  ▼                  ▼
- Ridge Regression   Lasso Regression   Cross Validation
-      │                  │                  │
-      └──────────────────┼──────────────────┘
-                         ▼
-                DECISION TREE
-                         │
-                         ▼
-                RANDOM FOREST
-                         │
-                         ▼
-               SUPPORT VECTOR REGRESSION
-                         │
-                         ▼
-               MODEL EVALUATION
-                         │
-                         ▼
-                BEST MODEL SELECTION 🏆
-```
+> 💡 **Note:** Create an `images` folder and add your GIF files with the names `project_demo.gif` and `model_workflow.gif`.
 
 ---
 
-# 📁 Project Structure
-
-```text
-House-Price-Prediction/
-│
-├── project2(3).ipynb
-│
-├── house_price.csv
-│
-├── README.md
-│
-└── assets/
-    │
-    ├── house.gif
-    ├── ml-workflow.gif
-    ├── ridge-lasso.gif
-    ├── cross-validation.gif
-    ├── decision-tree.gif
-    ├── random-forest.gif
-    └── model-comparison.gif
-```
-
----
-
-# 🛠️ Technologies & Tools Used
+# 📦 What Is Used In This Project?
 
 <div align="center">
 
-| 🧰 Tool / Library   | 🎯 Purpose                         |
-| ------------------- | ---------------------------------- |
-| 🐍 Python           | Main Programming Language          |
-| 🐼 Pandas           | Data Loading and Data Manipulation |
-| 🔢 NumPy            | Numerical Calculations             |
-| 📊 Matplotlib       | Data Visualization                 |
-| 🤖 Scikit-learn     | Machine Learning Models            |
-| 📁 CSV Dataset      | House Price Data Storage           |
-| 📓 Jupyter Notebook | Project Development                |
+| 🛠️ Technology          | 📌 Purpose                    |
+| ----------------------- | ----------------------------- |
+| 🐍 **Python**           | Main Programming Language     |
+| 🐼 **Pandas**           | Data Loading and Manipulation |
+| 🔢 **NumPy**            | Numerical Operations          |
+| 🤖 **Scikit-learn**     | Machine Learning Models       |
+| 📊 **Matplotlib**       | Data Visualization            |
+| ⚙️ **StandardScaler**   | Feature Scaling               |
+| 🔄 **Cross Validation** | Model Validation              |
+| 🎯 **GridSearch / CV**  | Hyperparameter Optimization   |
 
 </div>
 
 ---
 
-# 📦 Libraries Used
+# 🧰 Libraries Used
 
 ```python
 import pandas as pd
 import numpy as np
 
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import (
+    train_test_split,
+    GridSearchCV,
+    KFold,
+    StratifiedKFold,
+    LeaveOneOut,
+    TimeSeriesSplit,
+    cross_val_score
+)
 
 from sklearn.preprocessing import StandardScaler
 
@@ -172,44 +105,56 @@ from sklearn.metrics import (
 
 from sklearn.pipeline import make_pipeline
 
-import matplotlib.pylab as plt
+import matplotlib.pyplot as plt
 ```
 
 ---
 
-# 📂 Dataset
+# 🎯 Project Objective
 
-The project uses a **House Price Dataset** stored in CSV format.
+The main objectives of this project are:
 
-```python
-data = pd.read_csv("house_price.csv")
-```
+<div align="center">
 
-The dataset is loaded using **Pandas**.
+| #   | Objective                                      |
+| --- | ---------------------------------------------- |
+| 1️⃣ | Load and understand the House Price dataset    |
+| 2️⃣ | Separate feature variables and target variable |
+| 3️⃣ | Perform Train-Test Split                       |
+| 4️⃣ | Apply Feature Scaling                          |
+| 5️⃣ | Build Ridge Regression Model                   |
+| 6️⃣ | Build Lasso Regression Model                   |
+| 7️⃣ | Perform Multiple Cross Validation Techniques   |
+| 8️⃣ | Build Decision Tree Regression Model           |
+| 9️⃣ | Build Random Forest Regression Model           |
+| 🔟  | Compare Different SVR Kernels                  |
+| 🏆  | Compare all models and select the Best Model   |
 
-Initial data inspection:
+</div>
 
-```python
-print(data.head())
-print(data.info())
-```
+---
 
-### 📊 Dataset Processing
+# 📂 Dataset Information
 
-The project identifies:
+The project uses:
 
 ```text
-Input Features  → X
-Target Variable → y
+house_price.csv
 ```
 
-The target variable used for prediction is:
+### 🎯 Target Variable
 
 ```text
 houseprice
 ```
 
-The column names are cleaned before processing:
+### 📅 Column Removed Before Model Training
+
+```text
+sale_date
+```
+
+The project also removes extra spaces from column names:
 
 ```python
 data.columns = data.columns.str.strip()
@@ -217,55 +162,65 @@ data.columns = data.columns.str.strip()
 
 ---
 
-# 🟦 PART B — Data Preparation
+# 🔄 Complete Machine Learning Workflow
 
-## 1️⃣ Feature and Target Selection
+```mermaid
+flowchart LR
+    A[📂 Load Dataset] --> B[🧹 Clean Column Names]
+    B --> C[🎯 Select X and y]
+    C --> D[✂️ Train Test Split]
+    D --> E[⚙️ StandardScaler]
+    E --> F[🤖 Train Models]
+    F --> G[🔄 Cross Validation]
+    G --> H[🎯 Hyperparameter Tuning]
+    H --> I[📊 Evaluate Models]
+    I --> J[🏆 Select Best Model]
+```
 
-Feature variables:
+---
+
+# 🏗️ Project Parts
+
+## 🟦 PART A — Data Loading
+
+The dataset is loaded using Pandas.
+
+```python
+data = pd.read_csv("house_price.csv")
+
+print(data.head())
+print(data.info())
+```
+
+### ✔️ Tasks Performed
+
+* Load dataset
+* Display first rows
+* Check dataset information
+* Understand columns and data types
+
+---
+
+## 🟩 PART B — Data Preparation
+
+### 1️⃣ Feature and Target Separation
 
 ```python
 X = data.drop("houseprice", axis=1)
-```
 
-Target variable:
-
-```python
 y = data["houseprice"]
 ```
 
-### 🎯 Goal
-
-The model learns the relationship between house-related features and the final **house price**.
-
----
-
-## 2️⃣ Removing Unwanted Columns
-
-For model training, the project removes:
-
-```text
-houseprice
-sale_date
-```
-
-Code:
+### 2️⃣ Remove Target and Date Column
 
 ```python
-X = data.drop(["houseprice", "sale_date"], axis=1)
+X = data.drop(
+    ["houseprice", "sale_date"],
+    axis=1
+)
 ```
 
----
-
-## 3️⃣ Train-Test Split
-
-The dataset is divided into:
-
-```text
-80% → Training Data
-20% → Testing Data
-```
-
-Code:
+### 3️⃣ Train-Test Split
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(
@@ -276,19 +231,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 ```
 
-### Why?
-
-🟢 **Training Data** → Used to train the model
-
-🔵 **Testing Data** → Used to check model performance on unseen data
-
----
-
-## 4️⃣ Feature Scaling
-
-The project uses:
-
-> **StandardScaler**
+### 4️⃣ Feature Scaling
 
 ```python
 scaler = StandardScaler()
@@ -298,152 +241,140 @@ X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
 
-### Scaling Formula
-
-```text
-Scaled Value = (X - Mean) / Standard Deviation
-```
-
-Scaling is especially useful for models such as:
-
-* Ridge Regression
-* Lasso Regression
-* Support Vector Regression
-
 ---
 
-# 🟩 PART C — Regularization Techniques
+# ⚙️ Data Preparation Box
 
 <div align="center">
 
-<img src="assets/ridge-lasso.gif" alt="Ridge and Lasso GIF" width="550">
+| 🧹 Step | 🔍 Operation         |
+| ------- | -------------------- |
+| 1       | Remove Extra Spaces  |
+| 2       | Select Features      |
+| 3       | Select Target        |
+| 4       | Remove `sale_date`   |
+| 5       | Split Dataset        |
+| 6       | Apply StandardScaler |
 
 </div>
 
-## 🔵 Ridge Regression
+---
 
-Ridge Regression uses **L2 Regularization**.
+# 🟨 PART C — Regularization
+
+This project implements two important regularization techniques.
+
+## 🔵 Ridge Regression
 
 ```python
 ridge = Ridge(alpha=1)
 
-ridge.fit(X_train_scaled, y_train)
+ridge.fit(
+    X_train_scaled,
+    y_train
+)
 
-ridge_pred = ridge.predict(X_test_scaled)
+ridge_pred = ridge.predict(
+    X_test_scaled
+)
 ```
 
-### Evaluation
+### 📌 Evaluation
 
-```python
-ridge_mse = mean_squared_error(y_test, ridge_pred)
-
-ridge_r2 = r2_score(y_test, ridge_pred)
-```
-
-### Ridge Objective
-
-```text
-Loss = MSE + λ × Σ(coefficient²)
-```
-
-### Purpose
-
-✔ Reduces overfitting
-✔ Controls large coefficients
-✔ Works well when features are correlated
+* Mean Squared Error
+* R² Score
 
 ---
 
 ## 🟠 Lasso Regression
 
-Lasso Regression uses **L1 Regularization**.
-
 ```python
 lasso = Lasso(alpha=1)
 
-lasso.fit(X_train_scaled, y_train)
+lasso.fit(
+    X_train_scaled,
+    y_train
+)
 
-lasso_pred = lasso.predict(X_test_scaled)
+lasso_pred = lasso.predict(
+    X_test_scaled
+)
 ```
 
-### Evaluation
+### 📌 Evaluation
+
+* Mean Squared Error
+* R² Score
+
+---
+
+## 🎯 Best Alpha Selection
+
+The project uses Cross Validation to find better alpha values.
 
 ```python
-lasso_mse = mean_squared_error(y_test, lasso_pred)
-
-lasso_r2 = r2_score(y_test, lasso_pred)
+alphas = np.logspace(-3, 3, 100)
 ```
 
-### Lasso Objective
+### Ridge CV
 
-```text
-Loss = MSE + λ × Σ|coefficient|
+```python
+ridge_cv = RidgeCV(
+    alphas=alphas,
+    cv=5
+)
 ```
 
-### Purpose
+### Lasso CV
 
-✔ Reduces overfitting
-✔ Can reduce unnecessary feature coefficients
-✔ Helps in feature selection
+```python
+lasso_cv = LassoCV(
+    alphas=alphas,
+    cv=5,
+    random_state=42
+)
+```
 
 ---
 
 # 🔄 PART D — Cross Validation
 
+Multiple Cross Validation techniques are implemented.
+
 <div align="center">
 
-<img src="assets/cross-validation.gif" alt="Cross Validation GIF" width="600">
+| 🔢 Technique          | 📌 Purpose                              |
+| --------------------- | --------------------------------------- |
+| 1️⃣ K-Fold            | Divide data into multiple folds         |
+| 2️⃣ Stratified K-Fold | Maintain target distribution using bins |
+| 3️⃣ Leave-One-Out     | Use one sample for validation           |
+| 4️⃣ Time Series Split | Validate sequential data                |
 
 </div>
-
-Cross Validation is used to check whether the model performs consistently on different data splits.
 
 ---
 
 ## 1️⃣ K-Fold Cross Validation
 
-The project uses:
-
-```text
-5-Fold Cross Validation
-```
-
-Code:
-
 ```python
-model = make_pipeline(
-    StandardScaler(),
-    LinearRegression()
-)
-
 kfold = KFold(
     n_splits=5,
     shuffle=True,
     random_state=42
 )
-
-kfold_scores = cross_val_score(
-    model,
-    X_train,
-    y_train,
-    cv=kfold,
-    scoring="r2"
-)
 ```
 
-Output includes:
+Evaluation metric:
 
 ```text
-Individual R² Scores
-Mean R² Score
-Standard Deviation
+R² Score
 ```
 
 ---
 
 ## 2️⃣ Stratified K-Fold
 
-Since this is a regression problem, target values are divided into bins before applying stratification.
+Since this is a regression problem, the target values are converted into bins.
 
 ```python
 y_bins = pd.qcut(
@@ -454,34 +385,37 @@ y_bins = pd.qcut(
 )
 ```
 
-This helps maintain a balanced target distribution across folds.
+---
+
+## 3️⃣ Leave-One-Out Cross Validation
+
+```python
+loo = LeaveOneOut()
+```
+
+A maximum sample size of 500 is used:
+
+```python
+sample_size = min(500, len(X_train))
+```
 
 ---
 
-## 📚 Other Validation Methods Used
+## 4️⃣ Time Series Split
 
-The project also imports validation techniques such as:
+The project also includes:
 
-```text
-KFold
-StratifiedKFold
-LeaveOneOut
+```python
 TimeSeriesSplit
 ```
 
-These methods help compare different validation strategies.
+This technique is useful when validation should respect sequential ordering.
 
 ---
 
-# 🌳 PART E — Decision Tree Regression
+# 🌳 PART E — Tree-Based Models
 
-<div align="center">
-
-<img src="assets/decision-tree.gif" alt="Decision Tree GIF" width="500">
-
-</div>
-
-Decision Tree Regression learns patterns by splitting the data into different decision regions.
+## 🌱 Decision Tree Regressor
 
 ```python
 tree = DecisionTreeRegressor(
@@ -491,146 +425,78 @@ tree = DecisionTreeRegressor(
 )
 ```
 
-Model training:
+### Model Analysis
+
+The project compares different tree depths:
 
 ```python
-tree.fit(X_train, y_train)
+depth_values = [
+    2,
+    3,
+    5,
+    7,
+    10,
+    None
+]
 ```
 
-Prediction:
+This helps analyze **Tree Complexity** and model performance.
+
+---
+
+## 🌲 Random Forest Regressor
 
 ```python
-tree_train_prediction = tree.predict(X_train)
+forest = RandomForestRegressor(
+    n_estimators=100,
+    max_depth=10,
+    min_samples_split=5,
+    random_state=42,
+    n_jobs=-1
+)
+```
 
-tree_test_prediction = tree.predict(X_test)
+### ⚡ Configuration Used
+
+```text
+Number of Trees     : 100
+Maximum Depth       : 10
+Minimum Split       : 5
+Random State        : 42
+Parallel Processing : n_jobs=-1
 ```
 
 ---
 
-## 📊 Decision Tree Evaluation
+# 🌳 Decision Tree vs Random Forest
 
-The following metrics are calculated:
-
-```text
-Training MSE
-Testing MSE
-Testing R² Score
-```
-
-Code:
-
-```python
-tree_train_mse = mean_squared_error(
-    y_train,
-    tree_train_prediction
-)
-
-tree_test_mse = mean_squared_error(
-    y_test,
-    tree_test_prediction
-)
-
-tree_r2 = r2_score(
-    y_test,
-    tree_test_prediction
-)
-```
-
----
-
-## 🌱 Tree Complexity Analysis
-
-Different tree depths are tested:
-
-```python
-depth_values = [2, 3, 5, 7, 10, None]
-```
-
-This helps analyze:
-
-```text
-Small Depth  → Possible Underfitting
-Optimal Depth → Better Generalization
-Large Depth  → Possible Overfitting
-```
-
----
-
-# 🌲 Random Forest Regression
-
-Random Forest combines predictions from multiple Decision Trees.
-
-```text
-Tree 1 ─┐
-Tree 2 ─┤
-Tree 3 ─┤
-Tree 4 ─┼──► Final Prediction
-Tree 5 ─┤
-Tree N ─┘
-```
-
-### Why Random Forest?
-
-✔ Uses multiple trees
-✔ Reduces overfitting compared with a single tree
-✔ Can capture complex relationships
-✔ Produces a combined prediction
+| Feature          | 🌱 Decision Tree | 🌲 Random Forest |
+| ---------------- | ---------------- | ---------------- |
+| Model Type       | Single Tree      | Multiple Trees   |
+| Complexity       | Lower            | Higher           |
+| Overfitting Risk | Higher           | Lower            |
+| Final Prediction | One Tree         | Average of Trees |
+| Implemented      | ✅                | ✅                |
 
 ---
 
 # 🔴 PART F — Support Vector Regression
 
-<div align="center">
+Three SVR kernels are implemented and compared.
 
-<img src="assets/svr.gif" alt="SVR GIF" width="500">
-
-</div>
-
-Support Vector Regression is used with multiple kernels to compare different relationships between features and house prices.
-
----
-
-## 1️⃣ Linear SVR
+## 📈 SVR Linear Kernel
 
 ```python
-svr_linear = make_pipeline(
-
-    StandardScaler(),
-
-    SVR(
-        kernel="linear",
-        C=100,
-        epsilon=0.1
-    )
-)
-```
-
-Training:
-
-```python
-svr_linear.fit(
-    X_train,
-    y_train
-)
-```
-
-Evaluation:
-
-```python
-linear_mse = mean_squared_error(
-    y_test,
-    linear_prediction
-)
-
-linear_r2 = r2_score(
-    y_test,
-    linear_prediction
+SVR(
+    kernel="linear",
+    C=100,
+    epsilon=0.1
 )
 ```
 
 ---
 
-## 2️⃣ Polynomial SVR
+## 📈 SVR Polynomial Kernel
 
 ```python
 SVR(
@@ -641,106 +507,101 @@ SVR(
 )
 ```
 
-This model is useful when the relationship between variables is more complex and non-linear.
+---
+
+## 📈 SVR RBF Kernel
+
+```python
+SVR(
+    kernel="rbf",
+    C=100,
+    gamma="scale",
+    epsilon=0.1
+)
+```
 
 ---
 
-## 🧠 SVR Parameters Used
+# ⚙️ SVR Hyperparameter Tuning
 
-| Parameter | Meaning                                 |
-| --------- | --------------------------------------- |
-| `kernel`  | Type of relationship used by SVR        |
-| `C`       | Controls penalty for errors             |
-| `epsilon` | Defines the acceptable error margin     |
-| `degree`  | Polynomial degree for polynomial kernel |
+The project tests different values for:
+
+```text
+C
+Gamma
+Epsilon
+```
+
+### Values Used
+
+```python
+C_values = [1, 10, 100]
+
+gamma_values = [
+    "scale",
+    0.01,
+    0.1
+]
+
+epsilon_values = [
+    0.1,
+    0.2,
+    0.5
+]
+```
+
+The best parameter combination is selected based on model performance.
 
 ---
 
-# 📊 PART G — Model Evaluation
+# 📊 PART G — Model Evaluation and Comparison
 
-The project evaluates models using multiple metrics.
+All models are evaluated using a common function.
+
+```python
+def evaluate_model(
+    model_name,
+    train_pred,
+    test_pred
+):
+```
+
+The following metrics are calculated:
 
 <div align="center">
 
-<img src="assets/model-comparison.gif" alt="Model Comparison GIF" width="600">
+| 📊 Metric | 📝 Meaning                   |
+| --------- | ---------------------------- |
+| MSE       | Mean Squared Error           |
+| MAE       | Mean Absolute Error          |
+| RMSE      | Root Mean Squared Error      |
+| R²        | Coefficient of Determination |
 
 </div>
 
-## 📐 Metrics Used
-
-### 1️⃣ Mean Squared Error — MSE
-
-```text
-MSE = Average of Squared Errors
-```
-
-Lower MSE generally indicates better prediction accuracy.
-
 ---
 
-### 2️⃣ Mean Absolute Error — MAE
+# 🤖 Models Compared
 
 ```text
-MAE = Average Absolute Difference
-between Actual and Predicted Values
+┌───────────────────────────────┐
+│       MACHINE LEARNING        │
+├───────────────────────────────┤
+│  🔵 Ridge Regression         │
+│  🟠 Lasso Regression         │
+│  🌱 Decision Tree            │
+│  🌲 Random Forest            │
+│  📈 SVR Linear               │
+│  📈 SVR Polynomial           │
+│  📈 SVR RBF                  │
+└───────────────────────────────┘
 ```
-
-Lower MAE indicates smaller prediction errors.
-
----
-
-### 3️⃣ Root Mean Squared Error — RMSE
-
-```text
-RMSE = √MSE
-```
-
-RMSE shows prediction error in the target variable's scale.
-
----
-
-### 4️⃣ R² Score
-
-```text
-R² = Model's ability to explain
-variation in the target variable
-```
-
-Higher R² generally indicates better model performance.
-
----
-
-## 🧮 Evaluation Function
-
-The project calculates:
-
-```text
-Training MSE
-Testing MSE
-
-Training MAE
-Testing MAE
-
-Training RMSE
-Testing RMSE
-
-Training R²
-Testing R²
-```
-
-This allows a detailed comparison between training and testing performance.
 
 ---
 
 # 🏆 PART H — Best Model Selection
 
-The project automatically identifies the best-performing model based on:
-
-```text
-Highest Test R² Score
-```
-
-Code:
+The best model is selected using the highest Test R² Score.
 
 ```python
 best_model = results_df.loc[
@@ -748,225 +609,150 @@ best_model = results_df.loc[
 ]
 ```
 
-The selected model displays:
+The project displays:
 
 ```text
-🏆 Model Name
-📉 Test MSE
-📊 Test MAE
-📏 Test RMSE
-⭐ Test R² Score
+Model Name
+Test MSE
+Test MAE
+Test RMSE
+Test R2
 ```
 
 ---
 
-# 🔍 Regularization Analysis
+# 📉 Final Model Comparison Visualization
 
-The project also performs regularization analysis.
+The project creates visual comparisons using Matplotlib.
 
-The main techniques compared are:
+### 📊 R² Score Comparison
 
-| Model            | Regularization    |
-| ---------------- | ----------------- |
-| Ridge Regression | L2 Regularization |
-| Lasso Regression | L1 Regularization |
+```python
+plt.figure(figsize=(10, 5))
 
-This analysis helps understand how regularization affects model performance and coefficients.
+plt.bar(
+    plot_data["Model"],
+    plot_data["Test R2"]
+)
+
+plt.xlabel("Models")
+plt.ylabel("Test R2")
+plt.title("Model Performance Comparison")
+```
 
 ---
 
-# 🤖 Machine Learning Models Used
+# 🖼️ Add Your Output Screenshots
 
 <div align="center">
 
-| No. | Model                   | Type                     |
-| --- | ----------------------- | ------------------------ |
-| 1️⃣ | Linear Regression       | Linear Model             |
-| 2️⃣ | Ridge Regression        | Regularized Linear Model |
-| 3️⃣ | Lasso Regression        | Regularized Linear Model |
-| 4️⃣ | Decision Tree Regressor | Tree-Based Model         |
-| 5️⃣ | Random Forest Regressor | Ensemble Model           |
-| 6️⃣ | SVR - Linear Kernel     | Support Vector Model     |
-| 7️⃣ | SVR - Polynomial Kernel | Support Vector Model     |
+### 📊 Model Comparison Output
+
+<img src="images/model_comparison.png" width="850">
+
+<br><br>
+
+### 🏆 Best Model Output
+
+<img src="images/best_model.png" width="850">
+
+<br><br>
+
+### 📈 R² Score Visualization
+
+<img src="images/r2_comparison.png" width="850">
 
 </div>
 
 ---
 
-# 📊 Model Comparison Strategy
-
-All models are evaluated using the same important metrics.
+# 📁 Recommended Project Structure
 
 ```text
-                    TRAIN MODELS
-                         │
-      ┌──────────┬───────┼────────┬──────────┐
-      ▼          ▼       ▼        ▼          ▼
-    Ridge      Lasso    Tree    Forest       SVR
-      │          │       │        │          │
-      └──────────┴───────┼────────┴──────────┘
-                         ▼
-                 CALCULATE METRICS
-                         │
-             ┌───────────┼───────────┐
-             ▼           ▼           ▼
-            MSE         MAE         RMSE
-                         │
-                         ▼
-                        R²
-                         │
-                         ▼
-                  🏆 BEST MODEL
+House-Price-Prediction/
+│
+├── 📂 images/
+│   ├── project_demo.gif
+│   ├── model_workflow.gif
+│   ├── model_comparison.png
+│   ├── best_model.png
+│   └── r2_comparison.png
+│
+├── 📂 data/
+│   └── house_price.csv
+│
+├── 📓 project2(2).ipynb
+│
+├── 📄 requirements.txt
+│
+└── 📄 README.md
 ```
 
 ---
 
-# 🚀 How to Run the Project
+# 🚀 How To Run This Project
 
-## Step 1 — Clone or Download the Project
-
-Download the project files to your computer.
-
----
-
-## Step 2 — Install Required Libraries
+## 1️⃣ Clone the Repository
 
 ```bash
-pip install pandas
-pip install numpy
-pip install matplotlib
-pip install scikit-learn
+git clone YOUR_REPOSITORY_LINK
 ```
 
-Or:
+## 2️⃣ Move to the Project Folder
+
+```bash
+cd House-Price-Prediction
+```
+
+## 3️⃣ Install Required Libraries
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn
 ```
 
----
+## 4️⃣ Make Sure Dataset Is Available
 
-## Step 3 — Keep Dataset in the Same Folder
-
-Make sure these files are together:
+Place:
 
 ```text
-project2(3).ipynb
 house_price.csv
 ```
 
----
+in the required project location.
 
-## Step 4 — Open Jupyter Notebook
+## 5️⃣ Open Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
+## 6️⃣ Run the Project
+
 Open:
 
 ```text
-project2(3).ipynb
+project2(2).ipynb
 ```
+
+Run all cells from top to bottom.
 
 ---
 
-## Step 5 — Run All Cells
+# 📦 Requirements
 
-Run the notebook from top to bottom.
-
-```text
-Kernel
-   ↓
-Restart & Run All
-```
-
-The project will:
-
-1. Load the dataset
-2. Prepare features and target
-3. Split training and testing data
-4. Scale features where required
-5. Train multiple regression models
-6. Perform validation
-7. Calculate performance metrics
-8. Compare models
-9. Select the best model
-
----
-
-# 📸 Screenshots / Output
-
-You can add your project output screenshots here.
-
-### Dataset Preview
+Create a `requirements.txt` file:
 
 ```text
-assets/dataset-preview.png
+pandas
+numpy
+matplotlib
+scikit-learn
 ```
 
-### Ridge and Lasso Output
+Then install using:
 
-```text
-assets/ridge-lasso-output.png
-```
-
-### Cross Validation Output
-
-```text
-assets/cross-validation-output.png
-```
-
-### Decision Tree Output
-
-```text
-assets/decision-tree-output.png
-```
-
-### SVR Output
-
-```text
-assets/svr-output.png
-```
-
-### Final Model Comparison
-
-```text
-assets/final-model-comparison.png
-```
-
-Example:
-
-```html
-<img src="assets/final-model-comparison.png"
-     alt="Final Model Comparison"
-     width="800">
-```
-
----
-
-# 📁 Recommended Assets Folder
-
-To make the GitHub README look attractive, create an `assets` folder and add:
-
-```text
-assets/
-│
-├── house.gif
-├── ml-workflow.gif
-├── ridge-lasso.gif
-├── cross-validation.gif
-├── decision-tree.gif
-├── random-forest.gif
-├── svr.gif
-├── model-comparison.gif
-│
-├── dataset-preview.png
-├── ridge-lasso-output.png
-├── cross-validation-output.png
-├── decision-tree-output.png
-├── svr-output.png
-└── final-model-comparison.png
+```bash
+pip install -r requirements.txt
 ```
 
 ---
@@ -975,77 +761,83 @@ assets/
 
 After completing this project, the following Machine Learning concepts are covered:
 
-* [x] Regression Fundamentals
-* [x] Data Loading with Pandas
-* [x] Feature Selection
-* [x] Target Variable Selection
-* [x] Train-Test Split
-* [x] StandardScaler
-* [x] Ridge Regression
-* [x] Lasso Regression
-* [x] Regularization
-* [x] RidgeCV
-* [x] LassoCV
-* [x] GridSearchCV
-* [x] K-Fold Cross Validation
-* [x] Stratified K-Fold
-* [x] Leave-One-Out Validation
-* [x] Time Series Split
-* [x] Decision Tree Regression
-* [x] Tree Complexity Analysis
-* [x] Random Forest Regression
-* [x] Support Vector Regression
-* [x] Linear SVR
-* [x] Polynomial SVR
-* [x] MSE
-* [x] MAE
-* [x] RMSE
-* [x] R² Score
-* [x] Model Comparison
-* [x] Best Model Selection
+<div align="center">
+
+| 🧠 Topic                 | Status |
+| ------------------------ | ------ |
+| Data Loading             | ✅      |
+| Feature Selection        | ✅      |
+| Train-Test Split         | ✅      |
+| Feature Scaling          | ✅      |
+| Ridge Regression         | ✅      |
+| Lasso Regression         | ✅      |
+| RidgeCV                  | ✅      |
+| LassoCV                  | ✅      |
+| K-Fold Validation        | ✅      |
+| Stratified K-Fold        | ✅      |
+| Leave-One-Out            | ✅      |
+| Time Series Split        | ✅      |
+| Decision Tree Regression | ✅      |
+| Random Forest Regression | ✅      |
+| SVR Linear               | ✅      |
+| SVR Polynomial           | ✅      |
+| SVR RBF                  | ✅      |
+| Hyperparameter Tuning    | ✅      |
+| Model Comparison         | ✅      |
+| Best Model Selection     | ✅      |
+| Data Visualization       | ✅      |
+
+</div>
 
 ---
 
-# 🎯 Project Objective
+# 🎯 Project Highlights
 
-> The main objective of this project is to build and compare multiple Machine Learning Regression models for House Price Prediction and select the model with the strongest testing performance based on evaluation metrics.
+> 🏠 **End-to-End House Price Prediction Project**
+
+> 🤖 **7 Different Machine Learning Models Compared**
+
+> 🔄 **Multiple Cross Validation Techniques Used**
+
+> ⚙️ **Hyperparameter Tuning Implemented**
+
+> 📊 **MSE, MAE, RMSE and R² Metrics Used**
+
+> 🏆 **Automatic Best Model Selection**
+
+> 📈 **Visual Model Performance Comparison**
 
 ---
 
-# 🏆 Final Result
+# 🔮 Future Improvements
 
-```text
-              MULTIPLE ML MODELS
-                       │
-                       ▼
-               PERFORMANCE CHECK
-                       │
-                       ▼
-        MSE + MAE + RMSE + R² SCORE
-                       │
-                       ▼
-             COMPARE ALL MODELS
-                       │
-                       ▼
-          SELECT HIGHEST TEST R² MODEL
-                       │
-                       ▼
-                  🏆 BEST MODEL
-```
+Some possible improvements for this project:
+
+* [ ] Add more data visualization
+* [ ] Perform detailed Exploratory Data Analysis
+* [ ] Add feature importance visualization
+* [ ] Save the best trained model using Pickle
+* [ ] Build a Streamlit Web Application
+* [ ] Deploy the model online
+* [ ] Add more advanced hyperparameter tuning
+* [ ] Add interactive dashboard
 
 ---
 
 <div align="center">
 
-# 🏠 House Price Prediction Project
+# ⭐ If You Like This Project
 
-### 📊 Machine Learning | 🤖 Regression | 📈 Model Evaluation
+### Give the repository a ⭐ Star!
 
-<br>
+---
 
-**Made with ❤️ using Python & Machine Learning**
+### 👨‍💻 Machine Learning Project
 
-⭐ If you found this project useful, don't forget to give it a Star!
+### 🏠 House Price Prediction
+
+### 🤖 Regression Model Comparison
+
+**Made with ❤️ using Python & Scikit-learn**
 
 </div>
-::: ​​
