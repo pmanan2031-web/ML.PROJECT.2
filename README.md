@@ -1,65 +1,188 @@
 <div align="center">
 
+<!-- Replace this GIF with your own project GIF -->
+
+<img src="./images/banner.gif" width="100%" alt="House Price Prediction Banner"/>
+
 # 🏠 House Price Prediction
 
-### Machine Learning Regression Project
-
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=for-the-badge\&logo=pandas)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-Machine_Learning-F7931E?style=for-the-badge\&logo=scikitlearn)
-![Status](https://img.shields.io/badge/Status-Completed-2EA44F?style=for-the-badge)
+### Predicting House Prices Using Machine Learning
 
 <br>
 
-### 🚀 Predicting House Prices Using Multiple Machine Learning Models
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square\&logo=python\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square\&logo=pandas\&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square\&logo=numpy\&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+
+<br>
+
+> An end-to-end Machine Learning project that prepares house price data, trains multiple regression models, evaluates their performance, and selects the best model.
 
 </div>
 
 ---
 
-## 🎬 Project Demo
+## 📌 Table of Contents
 
-<div align="center">
-
-<img src="images/project-demo.gif" width="850" alt="Project Demo">
-
-</div>
+* [About The Project](#-about-the-project)
+* [Project Preview](#-project-preview)
+* [Workflow](#-workflow)
+* [Features](#-features)
+* [Technologies Used](#️-technologies-used)
+* [Machine Learning Models](#-machine-learning-models)
+* [Model Evaluation](#-model-evaluation)
+* [Project Structure](#-project-structure)
+* [How To Run](#-how-to-run)
+* [Learning Outcomes](#-learning-outcomes)
 
 ---
 
-## 📌 About The Project
+# 📖 About The Project
 
-This project uses **Machine Learning Regression Models** to predict house prices.
+House price prediction is a **Regression Machine Learning problem**.
 
-Different models are trained, tested, and compared to find the **best-performing model**.
+In this project, the dataset is prepared and multiple Machine Learning models are trained to predict **house prices**. Different models are then compared using regression evaluation metrics to identify the best-performing model.
 
-### 🎯 Main Workflow
+### 🎯 Main Goal
 
 ```text
-📂 Dataset
-   ↓
-🧹 Data Preparation
-   ↓
-✂️ Train-Test Split
-   ↓
-⚙️ Feature Scaling
-   ↓
-🤖 Model Training
-   ↓
-📊 Model Evaluation
-   ↓
-🏆 Best Model
+Predict House Price → Train Multiple Models → Compare Performance → Select Best Model
 ```
 
 ---
 
-## 🔥 Project Workflow GIF
+# 🎬 Project Preview
 
 <div align="center">
 
-<img src="images/workflow.gif" width="850" alt="Machine Learning Workflow">
+### 🚀 Complete Project Demo
+
+<img src="./images/project-demo.gif" width="850" alt="Project Demo"/>
 
 </div>
+
+> 📌 Add your project GIF inside the `images` folder with the name `project-demo.gif`.
+
+---
+
+# 🔄 Workflow
+
+<div align="center">
+
+```text
+ ┌───────────────────┐
+ │   📂 Load Data     │
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ 🧹 Data Preparation│
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ ✂️ Train-Test Split│
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ ⚙️ Feature Scaling │
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ 🤖 Train Models   │
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ 📊 Evaluate Models │
+ └─────────┬─────────┘
+           ↓
+ ┌───────────────────┐
+ │ 🏆 Best Model      │
+ └───────────────────┘
+```
+
+<br>
+
+<img src="./images/workflow.gif" width="800" alt="Project Workflow"/>
+
+</div>
+
+---
+
+# ✨ Features
+
+<table>
+<tr>
+<td width="50%">
+
+### 🧹 Data Preparation
+
+* Clean column names
+* Select features and target
+* Remove unnecessary columns
+* Prepare data for ML
+
+</td>
+
+<td width="50%">
+
+### ⚙️ Feature Processing
+
+* Train-Test Split
+* Feature Scaling
+* StandardScaler
+
+</td>
+</tr>
+
+<tr>
+<td width="50%">
+
+### 🤖 Model Training
+
+* Multiple Regression Models
+* Tree-Based Models
+* Support Vector Regression
+
+</td>
+
+<td width="50%">
+
+### 📊 Model Comparison
+
+* MSE
+* MAE
+* RMSE
+* R² Score
+
+</td>
+</tr>
+</table>
+
+---
+
+# 🎞️ Data Preparation
+
+<div align="center">
+
+<img src="./images/data-preparation.gif" width="750" alt="Data Preparation"/>
+
+</div>
+
+### Basic Steps
+
+```text
+📂 Load Dataset
+      ↓
+🧹 Clean Data
+      ↓
+🎯 Select X and y
+      ↓
+✂️ Split Data
+      ↓
+⚙️ Scale Features
+```
 
 ---
 
@@ -67,63 +190,14 @@ Different models are trained, tested, and compared to find the **best-performing
 
 <div align="center">
 
-|  🐍 Python  |   🐼 Pandas   |    🔢 NumPy    | 🤖 Scikit-learn | 📊 Matplotlib |
-| :---------: | :-----------: | :------------: | :-------------: | :-----------: |
-| Programming | Data Analysis | Numerical Work |    ML Models    | Visualization |
-
-</div>
-
----
-
-# 📦 Libraries Used
-
-```python
-pandas
-numpy
-matplotlib
-scikit-learn
-```
-
----
-
-## ⚙️ Project Parts
-
-<div align="center">
-
-| Part      | Topic                         |
-| --------- | ----------------------------- |
-| 🟦 Part A | Data Loading                  |
-| 🟩 Part B | Data Preparation & Scaling    |
-| 🟨 Part C | Ridge & Lasso Regression      |
-| 🟪 Part D | Cross Validation              |
-| 🌳 Part E | Decision Tree & Random Forest |
-| 🔴 Part F | Support Vector Regression     |
-| 📊 Part G | Model Evaluation              |
-| 🏆 Part H | Best Model Selection          |
-
-</div>
-
----
-
-# 🧹 Data Preparation
-
-The dataset is prepared before training the models.
-
-### Main Steps
-
-```text
-✅ Load Dataset
-✅ Clean Column Names
-✅ Select Features
-✅ Select House Price as Target
-✅ Remove Unnecessary Columns
-✅ Train-Test Split
-✅ Feature Scaling
-```
-
-<div align="center">
-
-<img src="images/data-preparation.gif" width="750" alt="Data Preparation">
+| Technology          | Purpose                   |
+| :------------------ | :------------------------ |
+| 🐍 Python           | Main Programming Language |
+| 🐼 Pandas           | Data Analysis             |
+| 🔢 NumPy            | Numerical Operations      |
+| 🤖 Scikit-learn     | Machine Learning          |
+| 📊 Matplotlib       | Data Visualization        |
+| 📓 Jupyter Notebook | Project Development       |
 
 </div>
 
@@ -131,48 +205,82 @@ The dataset is prepared before training the models.
 
 # 🤖 Machine Learning Models
 
-The project compares multiple regression models.
-
 <div align="center">
 
-| Model               | Purpose                          |
-| ------------------- | -------------------------------- |
-| 🔵 Ridge Regression | Regularized Linear Model         |
-| 🟠 Lasso Regression | Feature Regularization           |
-| 🌱 Decision Tree    | Tree-Based Prediction            |
-| 🌲 Random Forest    | Multiple Decision Trees          |
-| 📈 SVR Linear       | Linear Support Vector Regression |
-| 📉 SVR Polynomial   | Polynomial Pattern Prediction    |
-| 🔴 SVR RBF          | Non-Linear Pattern Prediction    |
+<img src="./images/model-training.gif" width="800" alt="Model Training"/>
 
 </div>
 
----
+The following models are used and compared in this project:
 
-# 🎞️ Model Training GIF
+<table>
+<tr>
+<td align="center" width="33%">
 
-<div align="center">
+### 🔵 Ridge
 
-<img src="images/model-training.gif" width="850" alt="Model Training">
+Regularized Regression
 
-</div>
+</td>
+<td align="center" width="33%">
+
+### 🟠 Lasso
+
+Feature Regularization
+
+</td>
+<td align="center" width="33%">
+
+### 🌱 Decision Tree
+
+Tree-Based Model
+
+</td>
+</tr>
+
+<tr>
+<td align="center" width="33%">
+
+### 🌲 Random Forest
+
+Ensemble Learning
+
+</td>
+<td align="center" width="33%">
+
+### 📈 SVR
+
+Linear Kernel
+
+</td>
+<td align="center" width="33%">
+
+### 🔴 SVR
+
+Poly & RBF Kernels
+
+</td>
+</tr>
+</table>
 
 ---
 
 # 🔄 Cross Validation
 
-Different validation techniques are used to check model performance.
-
-### Methods Used
-
-* 🔹 K-Fold
-* 🔹 Stratified K-Fold
-* 🔹 Leave-One-Out
-* 🔹 Time Series Split
+Multiple validation methods are used to test model performance.
 
 <div align="center">
 
-<img src="images/cross-validation.gif" width="750" alt="Cross Validation">
+| Method               | Description                           |
+| :------------------- | :------------------------------------ |
+| 🔹 K-Fold            | Data is divided into multiple folds   |
+| 🔹 Stratified K-Fold | Balanced validation using target bins |
+| 🔹 Leave-One-Out     | One sample used for validation        |
+| 🔹 Time Series Split | Sequential data validation            |
+
+<br>
+
+<img src="./images/cross-validation.gif" width="750" alt="Cross Validation"/>
 
 </div>
 
@@ -180,21 +288,15 @@ Different validation techniques are used to check model performance.
 
 # ⚙️ Hyperparameter Tuning
 
-The project tests different model settings to improve performance.
-
-### Parameters Tested
+Different parameters are tested to improve model performance.
 
 ```text
-🔹 Alpha
-🔹 C
-🔹 Gamma
-🔹 Epsilon
-🔹 Tree Depth
+Alpha  •  C  •  Gamma  •  Epsilon  •  Tree Depth
 ```
 
 <div align="center">
 
-<img src="images/hyperparameter-tuning.gif" width="750" alt="Hyperparameter Tuning">
+<img src="./images/tuning.gif" width="750" alt="Hyperparameter Tuning"/>
 
 </div>
 
@@ -202,16 +304,16 @@ The project tests different model settings to improve performance.
 
 # 📊 Model Evaluation
 
-Models are compared using important regression metrics.
+Each model is evaluated using the following metrics:
 
 <div align="center">
 
-| Metric      | Meaning                      |
-| ----------- | ---------------------------- |
-| 📉 MSE      | Mean Squared Error           |
-| 📏 MAE      | Mean Absolute Error          |
-| 📊 RMSE     | Root Mean Squared Error      |
-| 🎯 R² Score | Model Accuracy / Performance |
+|    Metric   | Purpose                             |
+| :---------: | :---------------------------------- |
+|    📉 MSE   | Measures squared prediction error   |
+|    📏 MAE   | Measures average absolute error     |
+|   📊 RMSE   | Measures prediction error magnitude |
+| 🎯 R² Score | Measures overall model performance  |
 
 </div>
 
@@ -219,68 +321,66 @@ Models are compared using important regression metrics.
 
 # 📈 Performance Comparison
 
-# 📊 Performance Comparison
-
 <div align="center">
 
 ### 🤖 Comparing All Machine Learning Models
 
-<img src="./images/model_comparison.png"
-     width="850"
-     alt="Model Performance Comparison">
+<!-- IMPORTANT: Upload this exact file -->
+
+<img src="./images/model_comparison.png" width="850" alt="Model Performance Comparison"/>
 
 <br><br>
 
-### 📈 R² Score Comparison
+### 🎯 R² Score Comparison
 
-<img src="./images/r2-comparison.png"
-     width="850"
-     alt="R2 Score Comparison">
+<img src="./images/r2_comparison.png" width="850" alt="R2 Score Comparison"/>
 
 </div>
 
+> ⚠️ **Important:** The image filename in GitHub must exactly match the filename written above.
 
 ---
 
 # 🏆 Best Model Selection
 
-The final step is to compare all trained models.
-
-The model with the **best Test R² Score** is selected as the final best-performing model.
-
-```text
-🤖 Train All Models
-        ↓
-📊 Calculate Metrics
-        ↓
-📈 Compare Results
-        ↓
-🏆 Select Best Model
-```
-
 <div align="center">
 
-<img src="images/best-model.gif" width="750" alt="Best Model">
+<img src="./images/best-model.gif" width="750" alt="Best Model Selection"/>
 
 </div>
 
+All trained models are compared based on their performance.
+
+```text
+🤖 All Models
+      ↓
+📊 Calculate Metrics
+      ↓
+📈 Compare Results
+      ↓
+🏆 Best Performing Model
+```
+
+The model with the strongest test performance is selected as the **Best Model**.
+
 ---
 
-# 📂 Project Structure
+# 📁 Project Structure
 
 ```text
 House-Price-Prediction/
 │
 ├── 📂 images/
+│   ├── banner.gif
 │   ├── project-demo.gif
 │   ├── workflow.gif
 │   ├── data-preparation.gif
 │   ├── model-training.gif
 │   ├── cross-validation.gif
-│   ├── hyperparameter-tuning.gif
-│   ├── model-comparison.gif
+│   ├── tuning.gif
 │   ├── best-model.gif
-│   └── r2-comparison.png
+│   ├── model_comparison.png
+│   └── r2_comparison.png
 │
 ├── 📓 project2(2).ipynb
 ├── 📄 house_price.csv
@@ -298,7 +398,7 @@ House-Price-Prediction/
 git clone YOUR_REPOSITORY_LINK
 ```
 
-### 2️⃣ Install Libraries
+### 2️⃣ Install Required Libraries
 
 ```bash
 pip install pandas numpy matplotlib scikit-learn
@@ -318,46 +418,35 @@ Open:
 project2(2).ipynb
 ```
 
-Then run all cells. 🚀
+Run all cells from top to bottom. 🚀
 
 ---
 
-# 📚 What I Learned
+# 📚 Learning Outcomes
 
-```text
-🐍 Python Programming
-📊 Data Analysis
-🧹 Data Preprocessing
-✂️ Train-Test Split
-⚙️ Feature Scaling
-🤖 Regression Models
-🔄 Cross Validation
-🌳 Tree-Based Models
-📈 Support Vector Regression
-⚙️ Hyperparameter Tuning
-📊 Model Evaluation
-🏆 Model Comparison
-```
-
----
-
-## 🌟 Project Highlights
+Through this project, the following concepts are covered:
 
 <div align="center">
 
-### 🏠 House Price Prediction
+`Data Preparation` • `Feature Scaling` • `Regression`
 
-🤖 **Multiple ML Models**
+`Cross Validation` • `Ridge` • `Lasso`
 
-🔄 **Cross Validation**
+`Decision Tree` • `Random Forest` • `SVR`
 
-⚙️ **Hyperparameter Tuning**
+`Hyperparameter Tuning` • `Model Evaluation` • `Model Comparison`
 
-📊 **Performance Comparison**
+</div>
 
-🏆 **Best Model Selection**
+---
 
-🎞️ **GIF-Based Project Preview**
+# 🌟 Project Highlights
+
+<div align="center">
+
+|        🧹        |        🤖       |        🔄        |           📊           |     🏆     |
+| :--------------: | :-------------: | :--------------: | :--------------------: | :--------: |
+| Data Preparation | Multiple Models | Cross Validation | Performance Comparison | Best Model |
 
 </div>
 
@@ -365,10 +454,12 @@ Then run all cells. 🚀
 
 <div align="center">
 
-# ⭐ Thank You!
+## ⭐ If You Like This Project
 
-### If you like this project, don't forget to give it a ⭐
+### Don't forget to give this repository a ⭐
 
-**Made with ❤️ using Python, Pandas, NumPy & Scikit-learn**
+<br>
+
+**Made with ❤️ using Python and Machine Learning**
 
 </div>
