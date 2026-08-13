@@ -1,5 +1,19 @@
 <div align="center">
 
+<img src="./images/house-price-banner.png" width="100%"/>
+
+# 🏠 House Price Prediction
+
+### Predicting House Prices Using Machine Learning
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine-Learning-0A66C2?style=for-the-badge)
+![Regression](https://img.shields.io/badge/Regression-House%20Price-1565C0?style=for-the-badge)
+
+</div>
+
+<div align="center">
+
 <!-- Replace this GIF with your own project GIF -->
 
 <img src="./images/banner.gif" width="100%" alt="House Price Prediction Banner"/>
