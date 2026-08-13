@@ -317,29 +317,6 @@ Each model is evaluated using the following metrics:
 
 </div>
 
----
-
-# 📈 Performance Comparison
-
-<div align="center">
-
-### 🤖 Comparing All Machine Learning Models
-
-<!-- IMPORTANT: Upload this exact file -->
-
-<img src="./images/model_comparison.png" width="850" alt="Model Performance Comparison"/>
-
-<br><br>
-
-### 🎯 R² Score Comparison
-
-<img src="./images/r2_comparison.png" width="850" alt="R2 Score Comparison"/>
-
-</div>
-
-> ⚠️ **Important:** The image filename in GitHub must exactly match the filename written above.
-
----
 
 # 🏆 Best Model Selection
 
