@@ -1,7 +1,7 @@
 <p align="center">
   <img src="./images/house_price_prediction.png.png"
        alt="House Price Prediction Project"
-       width="100%">
+       width="90%">
 </p>
 
 
