@@ -1,11 +1,7 @@
-<p align="center">
-  <img src="https://github.com/pmanan2031-web/ML.PROJECT.2/blob/main/image/house_price_prediction.png?raw=true"
-       alt="House Price Prediction Project"
-       width="100%">
-</p>
+
 
 <p align="center">
-  <img src="./image/house_price_prediction.png"
+  <img src="./image/house_price_prediction.png.png"
        alt="House Price Prediction Project"
        width="100%">
 </p>
