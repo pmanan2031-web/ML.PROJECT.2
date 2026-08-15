@@ -1,7 +1,6 @@
-<div align="center">
-
-<img src="[./images/house-price-banner.png](https://chatgpt.com/s/m_6a7df59836708191bbb579bddcd813da)" width="100%"/>
-
+<p align="center">
+  <img src="images/house_price_prediction.png" alt="House Price Prediction Project" width="100%">
+</p>
 
 # 🏠 House Price Prediction
 
