@@ -1,10 +1,10 @@
-
-
 <p align="center">
-  <img src="./image/house_price_prediction.png.png"
+  <img src="./images/house_price_prediction.png.png"
        alt="House Price Prediction Project"
        width="100%">
 </p>
+
+# 🏠 House Price Prediction
 # 🏠 House Price Prediction
 
 ### Predicting House Prices Using Machine Learning
